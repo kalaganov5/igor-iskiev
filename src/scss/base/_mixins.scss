@@ -1,0 +1,47 @@
+// Media queries
+@mixin bp($point) {
+  @if $point==large {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  }
+
+  @else if $point==small {
+    @media (max-width: 1279px) {
+      @content;
+    }
+  }
+}
+
+//Placeholders
+//Usage:
+//@include placeholder;
+@mixin placeholder {
+
+  // sass-lint:disable no-vendor-prefixes
+  ::-webkit-input-placeholder {
+    @content
+  }
+
+  :-moz-placeholder {
+    @content
+  }
+
+  ::-moz-placeholder {
+    @content
+  }
+
+  :-ms-input-placeholder {
+    @content
+  }
+}
+
+@mixin outline {
+  outline: 1px solid red;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
