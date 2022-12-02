@@ -1,0 +1,75 @@
+.accent__headline {
+    font-family: 'SoyuzGrotesk', sans-serif;
+    color: #504848;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.accent__start-date {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #669494;
+    margin-bottom: 35px;
+}
+
+.accent__cta {
+    margin-bottom: 35px;
+}
+
+.accent__button {
+    width: 100%;
+    display: block;
+    max-width: 500px;
+
+    &--more {
+        display: none;
+    }
+}
+
+.accent__quote {
+    display: none;
+}
+
+.accent__inner {
+    margin-top: 30px;
+}
+
+@media (min-width: $width-desktop) {
+    .accent__inner {
+        margin-top: 55px;
+    }
+
+    .accent__headline {
+        font-size: 5rem;
+        margin-bottom: 15px;
+    }
+
+    .accent__start-date {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 70px;
+    }
+
+    .accent__quote {
+        display: block;
+        margin-left: auto;
+        width: 580px;
+        margin-bottom: 70px;
+    }
+
+    .accent__cta {
+        margin-bottom: 85px;
+    }
+
+    .accent__button {
+        display: inline-block;
+        width: auto;
+        min-width: 320px;
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+@keyframes transition-navigation-in {
+    0% {
+        transform: translateY(-150%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.body--navigation-show {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+
+    .navigation {
+        background-color: #F2EAE7;
+        height: 100vh;
+        overflow-y: auto;
+        transform: translateY(-150%);
+        animation: transition-navigation-in 500ms forwards;
+        z-index: 1;
+
+        .navigation__menu {
+            display: block;
+            padding-bottom: 10px;
+            grid-column: 1/2;
+            grid-row-start: 1;
+            margin-left: 60px;
+            text-align: center;
+            padding-top: 10px;
+
+        }
+    }
+
+    .navigation__inner {
+        &--circle {
+
+            &::after {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+
+.navigation {
+    background-color: rgba(239, 227, 222, 0.38);
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.14);
+}
+
+.navigation__inner {
+    display: grid;
+    grid-template-columns: auto 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &--circle {
+        position: relative;
+
+        &::after {
+            opacity: 1;
+            content: '';
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            background-image: url('../images/design/icon-bg-circle.svg');
+            background-size: 290px;
+            background-repeat: no-repeat;
+            z-index: -1;
+            top: -35px;
+            right: -100px;
+        }
+    }
+}
+
+.navigation__hamburger {
+    grid-column: 2/2;
+    justify-self: end;
+}
+
+.navigation__menu {
+    display: none;
+}
+
+@media (min-width: $width-desktop) {
+    .navigation__hamburger {
+        display: none;
+    }
+
+    .navigation__menu {
+        display: block;
+    }
+
+    .navigation__inner {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &--circle {
+
+            &::after {
+                width: 834px;
+                height: 834px;
+                background-size: 834px;
+                top: -130px;
+                right: -260px;
+
+            }
+        }
+    }
+}

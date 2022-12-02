@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: local('Helvetica'), url('../fonts/Helvetica-Bold.woff2') format('woff2'), url('../fonts/Helvetica-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: local('Helvetica Bold'), url('../fonts/Helvetica-Bold.woff2') format('woff2'), url('../fonts/Helvetica-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoyuzGrotesk';
+    src: local('SoyuzGrotesk Bold'), url('../fonts/SoyuzGrotesk-Bold.woff2') format('woff2'), url('../fonts/SoyuzGrotesk-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

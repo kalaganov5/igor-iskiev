@@ -22,13 +22,58 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  max-width: $desktop;
-
-  &--small {
-    max-width: $width-small;
-  }
+  max-width: $width-desktop;
 }
 
 .button {
+  appearance: none;
+  color: #ffffff;
+  background-color: #98BA97;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 20px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  cursor: pointer;
+  @include transition(background-color);
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  vertical-align: baseline;
 
+  &:hover,
+  &:focus {
+    background-color: #7B957A;
+  }
+
+  &--stroke {
+    background-color: transparent;
+    border: 3px solid #98BA97;
+    color: #504848;
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.2;
+}
+
+@media (min-width: $width-desktop) {
+  .paragraph {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    font-size: 1.375rem;
+    padding: 25px;
+  }
 }
