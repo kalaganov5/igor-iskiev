@@ -9,8 +9,15 @@
   <meta name="description" content="Описание сайта">
 </head>
 
-<body class="body">
+<body class="body modal-offer--show">
   <svg width="0" height="0" class="hidden">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" id="icon-close">
+      <path
+        d="M18.5 36C28.165 36 36 28.165 36 18.5C36 8.83502 28.165 1 18.5 1C8.83502 1 1 8.83502 1 18.5C1 28.165 8.83502 36 18.5 36Z"
+        stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M23 14L14 23" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M14 14L23 23" stroke-linecap="round" stroke-linejoin="round"></path>
+    </symbol>
   </svg>
   <header class="header">
 
@@ -64,11 +71,11 @@
     </div>
   </header>
   <main class="main container">
-    <section class="main__about about ">
+    <section class="main__about about">
       <p class="about__tagline">
         Духовный проводник, создатель авторских духовных практик
       </p>
-      <h2 class="about__headline">
+      <h2 class="about__headline headline">
         Игорь Искиев
       </h2>
       <div class="about__text">
@@ -85,23 +92,130 @@
         </p>
         <p class="about__text about__text--desktop paragraph ">
           Изучая восточные практики, стало очевидно их&nbsp;комплексная польза на&nbsp;энергетическую, физиологическую,
-          психологическую и&nbsp;духовную сторону жизни, на&nbsp;здоровье, осознанность, восприятие внешнего и&nbsp;внутреннего
+          психологическую и&nbsp;духовную сторону жизни, на&nbsp;здоровье, осознанность, восприятие внешнего
+          и&nbsp;внутреннего
           мира.
         </p>
         <p class="about__text paragraph">
-          Во&nbsp;мне зародилось искреннее желание передать это сначала друзьям и&nbsp;близким, а&nbsp;сейчас каждому, кто
+          Во&nbsp;мне зародилось искреннее желание передать это сначала друзьям и&nbsp;близким, а&nbsp;сейчас каждому,
+          кто
           хотел&nbsp;бы
-          расширить свой диапазон, почувствовать новый и&nbsp;яркий вкус жизни, раскрыть себя и&nbsp;силу своей души, духа
+          расширить свой диапазон, почувствовать новый и&nbsp;яркий вкус жизни, раскрыть себя и&nbsp;силу своей души,
+          духа
           и&nbsp;тела,
           соединится
           со&nbsp;своим Высшим Я&nbsp;и&nbsp;безграничной силой любви в&nbsp;каждом из&nbsp;нас.
         </p>
       </div>
-      
+    </section>
+    <section class="main__offer offer">
+      <h2 class="offer__headline headline">
+        Практики
+      </h2>
+      <ul class="offer__list offers">
+        <li class="offers__item">
+          <h3 class="offers__headline">
+            Осознанное дыхание
+          </h3>
+          <div class="offers__content">
+            Осознанное дыхание&nbsp;&mdash; панацея от&nbsp;внутренних проблем, от&nbsp;боли, от&nbsp;дискомфорта,
+            от&nbsp;стресса,
+            от&nbsp;эмоций, от&nbsp;мыслей, от&nbsp;потерянности. Организм больше, чем обычно, наполняется кислородом
+            и&nbsp;жизненной энергией (праной). Что очень хорошо сказывается на&nbsp;здоровье всего организма.
+          </div>
+          <a href="offer-breathing.html" class="offers__link">
+            Читать подробнее
+          </a>
+        </li>
+        <li class="offers__item">
+          <h3 class="offers__headline">
+            Медитации
+          </h3>
+          <div class="offers__content">
+            Регулярная практика медитаций позволяет вам избавиться от&nbsp;стрессов,
+            депрессий, зависимостей и&nbsp;манипуляций,
+            хронических мышечных напряжений, болезней внутренних органов, суставов. А&nbsp;также способствует решению
+            проблем,
+            возникающих в&nbsp;семье, на&nbsp;работе и&nbsp;других ситуациях.
+          </div>
+          <a href="#" class="offers__link">
+            Читать подробнее
+          </a>
+        </li>
+        <li class="offers__item">
+          <h3 class="offers__headline">
+            Гвоздестояние
+          </h3>
+          <div class="offers__content">
+            Доска с&nbsp;гвоздями&nbsp;&mdash; это проверенный временем инструмент для работы
+            с&nbsp;телом и&nbsp;энергией. Практика
+            устраняет болезни, снимает мышечные блоки, омолаживает организм, улучшает обмен веществ. Помогает осознать
+            свою
+            внутреннюю силу, придает бодрости и&nbsp;сил для выполнения поставленных целей.
+          </div>
+          <a href="#" class="offers__link">
+            Читать подробнее
+          </a>
+        </li>
+        <li class="offers__item">
+          <h3 class="offers__headline">
+            Осознанное питание
+          </h3>
+          <div class="offers__content">
+            Осознанное питание поможет почувствовать себя более энергичным, &laquo;живым&raquo;, открытым
+            и&nbsp;подвижным, повышает
+            творческую активность и&nbsp;интуицию. Детокс позволяет организму скорее выводить вредные вещества, сбросить
+            вес,
+            улучшить состояние кожи и&nbsp;здоровья в&nbsp;целом, а&nbsp;также восстанавливает ферменты необходимые для
+            пищеварения.
+          </div>
+          <a href="#" class="offers__link">
+            Читать подробнее
+          </a>
+        </li>
+        <li class="offers__item">
+          <h3 class="offers__headline">
+            Динамические чакровые практики
+          </h3>
+          <div class="offers__content">
+            Практики являются активным видом медитации, которые приспособлены для современного человека с&nbsp;учётом
+            особенностей
+            западного образа жизни. Необходимый инструмент в&nbsp;достижении здоровья и&nbsp;успеха, и&nbsp;путь
+            глубокого духовного
+            развития. Почувствуйте себя действительно живым, сексуальным, радостным и&nbsp;духовным.
+          </div>
+          <a href="#" class="offers__link">
+            Читать подробнее
+          </a>
+        </li>
+      </ul>
     </section>
   </main>
   <footer class="footer">
   </footer>
+  <div class="container">
+    <div class="modal-offer modal-offer--popup">
+      <button type="button" class="modal-offer__button">
+        <span class="visually-hidden">
+          Вернуться назад
+        </span>
+        <svg class="modal-offer__icon-close" width="35" height="35">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </button>
+      <div class="modal-offer__content">
+        Дыхание&nbsp;&mdash; один из&nbsp;важнейших элементов человеческой жизни. Мы&nbsp;не&nbsp;можем жить без
+        дыхания более
+        нескольких минут. И&nbsp;поэтому дыхательные практики являются одними из&nbsp;самых мощных. Осознанное
+        дыхание&nbsp;&mdash; панацея от&nbsp;внутренних проблем, от&nbsp;боли, от&nbsp;дискомфорта,
+        от&nbsp;стресса,
+        от&nbsp;эмоций, от&nbsp;мыслей, от&nbsp;потерянности. Организм больше, чем обычно, наполняется
+        кислородом
+        и&nbsp;жизненной энергией (праной), это очень хорошо сказывается на&nbsp;здоровье всего организма.
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
