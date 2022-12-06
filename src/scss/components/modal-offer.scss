@@ -1,0 +1,58 @@
+.modal-offer {
+    background-color: #FDFBFA;
+    padding: 55px 30px;
+    border-radius: 30px;
+    font-size: 0.875rem;
+    color: #504848;
+    position: relative;
+
+    &--show {
+        
+        &--popup {}
+    }
+
+    &--popup {
+
+    }
+}
+
+.modal-offer__button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+        .modal-offer__icon-close {
+            stroke: #504848;
+        }
+    }
+}
+
+.modal-offer__icon-close {
+    width: 35px;
+    height: 35px;
+    stroke: #9B9393;
+    @include transition(stroke);
+}
+
+@media (min-width: $width-desktop) {
+    .modal-offer__button {
+        top: 25px;
+        right: 60px;
+    }
+
+    .modal-offer__icon-close {
+        width: 40px;
+        height: 40px;
+    }
+
+    .modal-offer {
+        padding: 75px;
+        font-size: 1.25rem;
+    }
+}

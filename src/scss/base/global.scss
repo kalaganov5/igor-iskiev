@@ -67,9 +67,22 @@
   line-height: 1.2;
 }
 
+.headline {
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: 'SoyuzGrotesk', sans-serif;
+}
+
 @media (min-width: $width-desktop) {
   .paragraph {
     font-size: 1.25rem;
+  }
+
+  .headline {
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: 'SoyuzGrotesk', sans-serif;
+    font-size: 5rem;
   }
 
   .button {

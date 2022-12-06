@@ -1,0 +1,95 @@
+.offers {
+    @include reset-list;
+    position: relative;
+
+    &::before {
+        $circleSize: 562px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 50px auto;
+        z-index: -1;
+        content: '';
+        width: $circleSize;
+        height: $circleSize;
+        border-radius: 50%;
+        background: linear-gradient(180deg, rgba(218, 226, 226, 0.608) 4.53%, rgba(217, 198, 198, 0.1976) 55.23%, rgba(237, 224, 224, 0.0076) 81.25%, rgba(237, 224, 224, 0.0076) 95.83%);
+        box-shadow: 1px 2px 100px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.offers__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.offers__headline {
+    color: #504848;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    box-shadow: 0 1px 0 #504848;
+    padding-bottom: 8px;
+    margin-bottom: 0;
+}
+
+.offers__content {
+    font-size: 0.875rem;
+    margin-bottom: 15px;
+    margin-top: 13px;
+}
+
+.offers__link {
+    color: rgba(80, 72, 72, 0.6);
+    text-decoration: none;
+    font-size: 0.75rem;
+    @include transition(color);
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+
+    &::after {
+        content: '';
+        background-image: url("../images/design/icon-arrow.svg");
+        background-repeat: no-repeat;
+        background-position: right center;
+        @include transition(background-image);
+        width: 32px;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    &:hover,
+    &:focus {
+        color: rgba(80, 72, 72, 1);
+
+        &::after {
+            background-image: url("../images/design/icon-arrow-filled.svg");
+        }
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .offers {
+        padding-left: 400px;
+
+        &::before {
+            $circleSize: 835px;
+            width: $circleSize;
+            height: $circleSize;
+            margin-top: 75px;
+        }
+    }
+
+    .offers__headline {
+        font-size: 2.25rem;
+    }
+
+    .offers__content {
+        font-size: 1.25rem;
+    }
+
+    .offers__link {
+        font-size: 1rem;
+    }
+}
