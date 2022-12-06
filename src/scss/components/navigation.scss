@@ -21,6 +21,7 @@
         transform: translateY(-150%);
         animation: transition-navigation-in 500ms forwards;
         z-index: 1;
+        overflow-x: hidden;
 
         .navigation__menu {
             display: block;

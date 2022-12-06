@@ -15,9 +15,6 @@
 }
 
 .about__headline {
-    font-weight: 700;
-    font-size: 1.5rem;
-    font-family: 'SoyuzGrotesk', sans-serif;
     margin-bottom: 20px;
 }
 
@@ -29,6 +26,7 @@
     float: right;
     border-radius: 30px;
     height: auto;
+    margin-bottom: 25px;
 }
 
 .about__accent {
@@ -71,11 +69,8 @@
         }
     }
 
-    .about__headline {
-        font-size: 5rem;
-    }
-
     .about__image {
         margin-left: 35px;
+        
     }
 }
