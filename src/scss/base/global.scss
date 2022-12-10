@@ -73,6 +73,12 @@
   font-family: 'SoyuzGrotesk', sans-serif;
 }
 
+@media (min-width: $width-tablet) {
+  .only-mobile {
+    display: none;
+  }
+}
+
 @media (min-width: $width-desktop) {
   .paragraph {
     font-size: 1.25rem;

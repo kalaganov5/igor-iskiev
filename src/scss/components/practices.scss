@@ -1,0 +1,12 @@
+.practices {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 0.875rem;
+}
+
+@media (min-width: $width-desktop) {
+    .practices {
+        padding-left: 25px;
+        font-size: 1.25rem;
+    }
+}

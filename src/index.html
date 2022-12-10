@@ -70,8 +70,8 @@
       </div>
     </div>
   </header>
-  <main class="main container">
-    <section class="main__about about">
+  <main class="main">
+    <section class="main__about about container">
       <p class="about__tagline">
         Духовный проводник, создатель авторских духовных практик
       </p>
@@ -108,7 +108,7 @@
         </p>
       </div>
     </section>
-    <section class="main__offer offer" id="offer">
+    <section class="main__offer offer container" id="offer">
       <h2 class="offer__headline headline">
         Практики
       </h2>
@@ -190,7 +190,7 @@
         </li>
       </ul>
     </section>
-    <section class="price">
+    <section class="price container">
       <h2 class="price__headline headline">
         Тарифы
       </h2>
@@ -260,6 +260,61 @@
         </li>
       </ul>
     </section>
+    <section class="practice">
+      <div class="practice__headline-container">
+        <h2 class="practice__headline headline container ">
+          Записаться <br class="only-mobile">на&nbsp;бесплатную практику
+        </h2>
+      </div>
+      <div class="container practice__container">
+        <div class="practice__body">
+          <p class="practice__subtitle paragraph">
+            На&nbsp;бесплатной практике мы&nbsp;попробуем:
+          </p>
+          <ol class="practice__list practices">
+            <li class="practices__item">
+              Энергетическое дыхание
+            </li>
+            <li class="practices__item">
+              Динамическую практику с медитацией
+            </li>
+            <li class="practices__item">
+              Ответы на ваши вопросы
+            </li>
+          </ol>
+          <p class="practice__desc paragraph">
+            Длительность практики&nbsp;&mdash; 2&nbsp;часа.
+          </p>
+          <p class="practice__desc paragraph">
+            Формат&nbsp;&mdash; звонок в&nbsp;Zoom
+          </p>
+        </div>
+        <form class="practice__form form" action="">
+          <div class="form__field">
+            <label class="visually-hidden" for="practice-name">
+              Введите имя
+            </label>
+            <input class="form__input" type="text" name="name" id="practice-name" placeholder="Имя">
+          </div>
+          <div class="form__field">
+            <input class="form__input" type="tel" name="tel" minlength="11" maxlength="18" id="practice-tel"
+              placeholder="Телефон*" required>
+            <div class="form__message">
+              <label for="practice-tel">
+                Введите телефон
+              </label>
+            </div>
+          </div>
+          <div class="form__field">
+            <input class="form__input form__input--checkbox" type="checkbox" name="accept" id="practice-accept" checked>
+            <label class="form__label form__label--accept" for="practice-accept">
+              <p>Согласен(а) на&nbsp;<a href="privacy.html" class="form__link">обработку персональных данных</a></p>
+            </label>
+          </div>
+          <input class="form__submit button" type="submit" value="Записаться на&nbsp;практику">
+        </form>
+      </div>
+    </section>
   </main>
   <footer class="footer">
   </footer>
@@ -285,7 +340,6 @@
       </div>
     </div>
   </div>
-
 </body>
 
 </html>

@@ -1,6 +1,13 @@
 .price {
     padding-bottom: 50px;
 }
+
 .price__headline {
     color: #504848;
+}
+
+@media (min-width: $width-desktop) {
+    .price {
+        padding-bottom: 90px;
+    }
 }
