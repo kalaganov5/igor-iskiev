@@ -1,0 +1,100 @@
+.receives {
+    @include reset-list;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    font-size: 0.875rem;
+}
+
+.receives__item {
+    display: flex;
+    min-height: 70px;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: calc(75% + 25px);
+    background-image: url("../images/design/icon-pazzle.svg");
+    background-size: 50px;
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+        background-position-x: calc(25% - 25px);
+    }
+
+    &--pazzle {
+        background-image: url("../images/design/icon-pazzle.svg");
+    }
+
+    &--gear {
+        background-image: url("../images/design/icon-gear.svg");
+    }
+
+    &--eye {
+        background-image: url("../images/design/icon-eye.svg");
+
+    }
+}
+
+.receives__body {
+    width: 50%;
+}
+
+@media (min-width: $width-tablet) {
+    .receives {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 35px;
+        font-size: 1.25rem;
+    }
+
+    .receives__item {
+        padding-top: 70px;
+        flex-basis: calc((100% - (35px * 2)) / 3);
+        flex-direction: column;
+        align-items: flex-start;
+        background-position: top center;
+
+        &:nth-child(even) {
+            background-position: top center;
+        }
+
+        &--eye,
+        &--eye:nth-child(even) {
+            background-position-y: 20px;
+        }
+    }
+
+    .receives__body {
+        width: 100%;
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .receives {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 35px;
+    }
+
+    .receives__item {
+        padding-top: 110px;
+        flex-basis: calc((100% - (35px * 2)) / 3);
+        flex-direction: column;
+        align-items: flex-start;
+        background-position: top center;
+        background-size: 80px;
+
+        &:nth-child(even) {
+            background-position: top center;
+        }
+
+        &--eye,
+        &--eye:nth-child(even) {
+            background-position-y: 20px;
+        }
+    }
+
+    .receives__body {
+        width: 100%;
+    }
+}

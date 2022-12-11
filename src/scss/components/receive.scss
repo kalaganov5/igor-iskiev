@@ -1,0 +1,20 @@
+.receive {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.receive__headline {
+    color: #504848;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+
+@media (min-width: $width-tablet) {}
+
+@media (min-width: $width-desktop) {
+    .receive__headline {
+        margin-bottom: 50px;
+    }
+}
