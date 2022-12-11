@@ -1,0 +1,115 @@
+@keyframes plus-animation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.spoiler {
+    @include reset-list;
+    color: #504848;
+    font-size: 0.875rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+$color-button: currentColor;
+
+.spoiler__item {
+    &--active {
+        .spoiler__body {
+            display: block;
+        }
+
+        .spoiler__button {
+            &::after {
+                background-image:
+                    linear-gradient($color-button 0 0);
+            }
+        }
+    }
+}
+
+.spoiler__body {
+    margin: 20px;
+    display: none;
+
+    & > p {
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+
+}
+
+.spoiler__button {
+    width: 100%;
+    text-align: left;
+    border: 0;
+    border-bottom: 1px solid rgba(80, 72, 72, 0.47);
+    padding: 5px 0;
+    background-color: unset;
+    cursor: pointer;
+    color: $color-button;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    @include transition(border-color);
+
+    &::after {
+        content: '';
+        width: 1.25rem;
+        height: 1.25rem;
+        min-width: 1.25rem;
+        background-image:
+            linear-gradient($color-button 0 0),
+            linear-gradient($color-button 0 0);
+        background-position: center;
+        background-size: 100% 1px, 1px 100%;
+        background-repeat: no-repeat;
+    }
+
+    &:hover,
+    &:focus {
+
+        border-bottom: 1px solid rgba(80, 72, 72, 1);
+
+        &::after {
+            animation: plus-animation 1s;
+        }
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .spoiler {
+        font-size: 1.25rem;
+    }
+
+    .spoiler__button {
+        padding: 15px 0;
+
+        &::after {
+            width: 1.875rem;
+            height: 1.875rem;
+            min-width: 1.875rem;
+        }
+    }
+
+    .spoiler__body {
+        margin: 20px 50px;
+    }
+}

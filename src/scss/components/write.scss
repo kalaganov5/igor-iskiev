@@ -1,0 +1,43 @@
+.write {
+    background-color: #D9D9D9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.write__headline {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 0.875rem;
+    color: #504848;
+    font-family: inherit;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.write__form {
+    max-width: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: $width-desktop) {
+    .write {
+        background-color: #DAE2E2;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .write__headline {
+        font-size: 1.5rem;
+        max-width: 610px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 70px;
+    }
+
+    .write__form {
+        max-width: 580px;
+    }
+}

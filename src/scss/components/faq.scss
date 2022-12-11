@@ -1,0 +1,21 @@
+.faq {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.faq__headline {
+    margin-bottom: 20px;
+    color: #504848;
+}
+
+@media (min-width: $width-desktop) {
+    .faq {
+        padding-top: 90px;
+        padding-bottom: 55px;
+    }
+
+    .faq__headline {
+        margin-top: 0;
+        margin-bottom: 70px;
+    }
+}
