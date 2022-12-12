@@ -1,0 +1,30 @@
+.menu-footer {
+    @include reset-list;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+
+}
+
+.menu-footer__link {
+    text-decoration-color: transparent;
+    color: #504848;
+    @include transition(text-decoration-color);
+    font-size: 0.75rem;
+
+    &:hover,
+    &:focus {
+        text-decoration-color: inherit;
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .menu-footer {
+        row-gap: 15px;
+    }
+
+    .menu-footer__link {
+        font-size: 1.25rem;
+    }
+}

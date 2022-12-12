@@ -1,0 +1,32 @@
+.footer {
+    background-color: #EFE3DE;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer__social {
+    margin-bottom: 20px;
+}
+
+.footer__copy {
+    margin-top: 10px;
+    text-align: center;
+    color: #504848;
+    font-size: 0.75rem;
+}
+
+@media (min-width: $width-desktop) {
+    .footer {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .footer__social {
+        margin-bottom: 25px;
+    }
+
+    .footer__copy {
+        font-size: 1rem;
+        margin-top: 25px;
+    }
+}
