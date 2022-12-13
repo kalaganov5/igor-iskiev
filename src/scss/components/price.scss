@@ -6,8 +6,17 @@
     color: #504848;
 }
 
+.price___subtitle {
+    margin-top: 0;
+    font-style: italic;
+}
+
 @media (min-width: $width-desktop) {
     .price {
         padding-bottom: 90px;
+    }
+
+    .price___subtitle {
+        font-size: 1.25rem;
     }
 }

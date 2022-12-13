@@ -30,7 +30,7 @@
     justify-content: space-between;
 
     & > *:not(:last-child) {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     & p:first-child {
@@ -39,12 +39,14 @@
 
     & ul {
         padding-left: 20px;
-        width: 60%;
-        max-width: 450px;
-        margin-left: auto;
-        margin-right: auto;
         list-style: disc;
     }
+}
+
+.prices__title {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 700;
 }
 
 .prices__button {
@@ -69,6 +71,10 @@
 
     .prices__item {
         width: calc(50% - (50px / 2));
+    }
+
+    .prices__title {
+        font-size: 1.5rem;
     }
 
     .prices__number {

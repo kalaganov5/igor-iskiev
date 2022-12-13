@@ -4,7 +4,7 @@
     }
 
     50% {
-        transform: translateY(-5px);
+        transform: translateY(-3px);
     }
 
     100% {
@@ -51,8 +51,6 @@ $color-button: currentColor;
             margin-bottom: 0;
         }
     }
-
-
 }
 
 .spoiler__button {
@@ -81,6 +79,7 @@ $color-button: currentColor;
         background-position: center;
         background-size: 100% 1px, 1px 100%;
         background-repeat: no-repeat;
+        @include transition(background-size);
     }
 
     &:hover,
@@ -90,6 +89,8 @@ $color-button: currentColor;
 
         &::after {
             animation: plus-animation 1s;
+            animation-delay: 500ms;
+            background-size: 100% 2px, 2px 100%;
         }
     }
 }
