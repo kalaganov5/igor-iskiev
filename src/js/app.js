@@ -7,9 +7,10 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { navigationMobile } from '../js/navigation-mobil';
 import { offersHandler } from '../js/offers';
+import { tabsHandler } from '../js/tabs';
 
 navigationMobile('body');
-
+tabsHandler();
 
 var swiper = new Swiper(".reviews__slider", {
     modules: [Pagination],
