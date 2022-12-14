@@ -2,6 +2,7 @@
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
+    position: relative;
 
     &--invalid .form__message {
         visibility: visible;
@@ -28,6 +29,9 @@
         position: absolute;
         z-index: -1;
         opacity: 0;
+        left: 0;
+        height: 100%;
+        max-width: 100%;
 
         /* для элемента label, связанного с .custom-checkbox */
         & + label {

@@ -1,11 +1,15 @@
 import '../scss/app.scss';
 
 /* Your JS Code goes here */
+
 import Swiper, { Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { navigationMobile } from '../js/navigation-mobil';
+import { offersHandler } from '../js/offers';
+
 navigationMobile('body');
+
 
 var swiper = new Swiper(".reviews__slider", {
     modules: [Pagination],
@@ -39,3 +43,5 @@ var swiper = new Swiper(".reviews__slider", {
     },
     autoHeight: true
 });
+
+offersHandler();

@@ -18,7 +18,7 @@
   <meta name="theme-color" content="#f3eeec">
 </head>
 
-<body class="body modal-offer--show">
+<body class="body">
   <svg width="0" height="0" class="hidden">
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" id="icon-close">
       <path
@@ -132,7 +132,7 @@
             от&nbsp;эмоций, от&nbsp;мыслей, от&nbsp;потерянности. Организм больше, чем обычно, наполняется кислородом
             и&nbsp;жизненной энергией (праной). Что очень хорошо сказывается на&nbsp;здоровье всего организма.
           </div>
-          <a href="offer-breathing.html" class="offers__link">
+          <a href="offer-breathing.html" data-id="breathing" class="offers__link">
             Читать подробнее
           </a>
         </li>
@@ -147,7 +147,7 @@
             проблем,
             возникающих в&nbsp;семье, на&nbsp;работе и&nbsp;других ситуациях.
           </div>
-          <a href="offer-meditation.html" class="offers__link">
+          <a href="offer-meditation.html" data-id="meditation" class="offers__link">
             Читать подробнее
           </a>
         </li>
@@ -162,7 +162,7 @@
             свою
             внутреннюю силу, придает бодрости и&nbsp;сил для выполнения поставленных целей.
           </div>
-          <a href="offer-nail-standing.html" class="offers__link">
+          <a href="offer-nail-standing.html" data-id="standing" class="offers__link">
             Читать подробнее
           </a>
         </li>
@@ -178,7 +178,7 @@
             улучшить состояние кожи и&nbsp;здоровья в&nbsp;целом, а&nbsp;также восстанавливает ферменты необходимые для
             пищеварения.
           </div>
-          <a href="offer-mindful-eating.html" class="offers__link">
+          <a href="offer-mindful-eating.html" data-id="eating" class="offers__link">
             Читать подробнее
           </a>
         </li>
@@ -193,7 +193,7 @@
             глубокого духовного
             развития. Почувствуйте себя действительно живым, сексуальным, радостным и&nbsp;духовным.
           </div>
-          <a href="offer-dynamic-chakra-practices.html" class="offers__link">
+          <a href="offer-chakra.html" data-id="chakra" class="offers__link">
             Читать подробнее
           </a>
         </li>
@@ -612,28 +612,32 @@
       </p>
     </div>
   </footer>
-  <div class="container">
-    <div class="modal-offer modal-offer--popup">
-      <button type="button" class="modal-offer__button">
-        <span class="visually-hidden">
-          Вернуться назад
-        </span>
-        <svg class="modal-offer__icon-close" width="35" height="35">
-          <use xlink:href="#icon-close"></use>
-        </svg>
-      </button>
-      <div class="modal-offer__content">
-        Дыхание&nbsp;&mdash; один из&nbsp;важнейших элементов человеческой жизни. Мы&nbsp;не&nbsp;можем жить без
-        дыхания более
-        нескольких минут. И&nbsp;поэтому дыхательные практики являются одними из&nbsp;самых мощных. Осознанное
-        дыхание&nbsp;&mdash; панацея от&nbsp;внутренних проблем, от&nbsp;боли, от&nbsp;дискомфорта,
-        от&nbsp;стресса,
-        от&nbsp;эмоций, от&nbsp;мыслей, от&nbsp;потерянности. Организм больше, чем обычно, наполняется
-        кислородом
-        и&nbsp;жизненной энергией (праной), это очень хорошо сказывается на&nbsp;здоровье всего организма.
+  <template id="modal-offer">
+    <div class="dialog" tabindex="-1">
+      <div class="dialog__content">
+        <div class="modal-offer modal-offer--popup">
+          <button type="button" class="modal-offer__button close-button">
+            <span class="visually-hidden">
+              Вернуться назад
+            </span>
+            <svg class="modal-offer__icon-close" width="35" height="35">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-offer__content">
+            Дыхание&nbsp;&mdash; один из&nbsp;важнейших элементов человеческой жизни. Мы&nbsp;не&nbsp;можем жить без
+            дыхания более
+            нескольких минут. И&nbsp;поэтому дыхательные практики являются одними из&nbsp;самых мощных. Осознанное
+            дыхание&nbsp;&mdash; панацея от&nbsp;внутренних проблем, от&nbsp;боли, от&nbsp;дискомфорта,
+            от&nbsp;стресса,
+            от&nbsp;эмоций, от&nbsp;мыслей, от&nbsp;потерянности. Организм больше, чем обычно, наполняется
+            кислородом
+            и&nbsp;жизненной энергией (праной), это очень хорошо сказывается на&nbsp;здоровье всего организма.
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </template>
 </body>
 
 </html>
