@@ -5,7 +5,6 @@ const buttons = document.querySelectorAll('.offers__link');
 const modalTemplate = document.querySelector('#modal-offer').content;
 
 export const offersHandler = () => {
-    console.log('work')
     buttons.forEach((button) => {
         button.addEventListener('click', (evt) => {
             evt.preventDefault();
