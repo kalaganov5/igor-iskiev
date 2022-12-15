@@ -4,11 +4,7 @@
     flex-direction: column;
     position: relative;
 
-    &--invalid .form__message {
-        visibility: visible;
-        opacity: 1;
-        color: #FF7A7A;
-    }
+
 }
 
 .form__input {
@@ -19,6 +15,20 @@
     color: #000;
     width: 100%;
     max-width: 580px;
+
+    &--invalid {
+        & + .form__message {
+            visibility: visible;
+            opacity: 1;
+            color: #FF7A7A;
+        }
+
+        &.form__input--checkbox {
+            & + label {
+                color: #FF7A7A;
+            }
+        }
+    }
 
     &::placeholder {
         color: #747476;
@@ -88,6 +98,7 @@
     opacity: 0;
     @include transition(color);
     @include transition(opacity);
+    text-align: left;
 }
 
 .form__label {

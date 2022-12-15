@@ -354,7 +354,7 @@
             Формат&nbsp;&mdash; звонок в&nbsp;Zoom
           </p>
         </div>
-        <form class="practice__form form" action="/" method="POST">
+        <form class="practice__form form" action="sendmail.php" method="POST">
           <div class="form__field">
             <label class="visually-hidden" for="practice-name">
               Введите имя
@@ -362,8 +362,8 @@
             <input class="form__input" type="text" name="name" id="practice-name" placeholder="Имя">
           </div>
           <div class="form__field">
-            <input class="form__input" type="tel" name="tel" minlength="11" maxlength="18" id="practice-tel"
-              placeholder="Телефон*" required>
+            <input class="form__input" type="tel" name="tel" id="practice-tel" data-tel-input="" placeholder="Телефон*"
+              required>
             <div class="form__message">
               <label for="practice-tel">
                 Введите телефон
@@ -468,7 +468,7 @@
         <h2 class="write__headline headline">
           Напишите мне, чтобы мы&nbsp;вместе смогли разобрать ваш запрос
         </h2>
-        <form class="write__form form" action="/" method="POST">
+        <form class="write__form form" action="sendmail.php" method="POST">
           <div class="form__field">
             <label class="visually-hidden" for="practice-name--write">
               Введите имя
@@ -476,8 +476,8 @@
             <input class="form__input" type="text" name="name" id="practice-name--write" placeholder="Имя">
           </div>
           <div class="form__field">
-            <input class="form__input" type="tel" name="tel" minlength="11" maxlength="18" id="practice-tel--write"
-              placeholder="Телефон*" required>
+            <input class="form__input" type="tel" name="tel" id="practice-tel--write" placeholder="Телефон*"
+              data-tel-input="" required>
             <div class="form__message">
               <label for="practice-tel--write">
                 Введите телефон
